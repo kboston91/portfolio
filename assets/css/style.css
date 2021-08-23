@@ -3,7 +3,7 @@
   color: var(--lavender);
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 :root {
@@ -67,12 +67,12 @@ h1 {
   color: var(--lavender);
   text-decoration: none;
   display: inline;
-  font-family: 'Allison', cursive;
+  font-family: "Allison", cursive;
 }
 
 h2 {
   font-weight: bold;
-  font-family: 'Allison', cursive;
+  font-family: "Allison", cursive;
   font-size: 30px;
 }
 
@@ -100,7 +100,7 @@ h2 {
   top: 0;
   left: 30px;
 }
-.hero-text{
+.hero-text {
   text-align: center;
   position: absolute;
   top: 70%;
@@ -113,7 +113,7 @@ h3 {
   color: black;
   text-align: center;
   padding: 8px;
-  font-family: 'Allison', cursive;
+  font-family: "Allison", cursive;
   font-size: 32px;
 }
 .about-content {
@@ -174,7 +174,7 @@ h3 {
   height: 100%;
   width: 100%;
   border: 3px solid var(--hotpink);
-  opacity: .5;
+  opacity: 0.5;
 }
 .project-2 img,
 .project-3 img,
@@ -183,7 +183,7 @@ h3 {
   height: 100%;
   width: 100%;
   border: 3px solid var(--hotpink);
-  opacity: .5;
+  opacity: 0.5;
 }
 .project-1 {
   position: relative;
@@ -205,7 +205,7 @@ h3 {
 .project-3 img:hover,
 .project-4 img:hover,
 .project-5 img:hover {
- opacity: 1;
+  opacity: 1;
 }
 .text-block {
   position: absolute;
@@ -248,15 +248,445 @@ h3 {
   text-align: center;
   font-weight: bold;
   font-style: italic;
-  
 }
-.phone, .email, .github, .linkedin {
+.phone,
+.email,
+.github,
+.linkedin {
   text-decoration: none;
   flex: 25%;
   border-bottom: 3px solid var(--hotpink);
   margin-right: 20px;
   margin-left: 20px;
 }
-.phone:hover, .email:hover, .github:hover, .linkedin:hover {
+.phone:hover,
+.email:hover,
+.github:hover,
+.linkedin:hover {
   border-bottom: 3px solid var(--lavender);
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--lavender);
+    background-color: var(--indigo);
+  }
+  header h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 0 0 50px;
+    font-weight: bold;
+    font-size: 64px;
+    color: var(--lavender);
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    font-family: "Allison", cursive;
+  }
+  header nav {
+    margin: 20px 0 5px 51px;
+    flex-wrap: wrap;
+    padding-left: 29%;
+  }
+  header nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer {
+    text-align: center;
+    width: 100%;
+  }
+
+  #hero {
+    width: 100%;
+  }
+  .headshot img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 10px 0px 10px 40px;
+    display: inline-block;
+    top: 50%;
+    left: 37%;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    right: 35%;
+  }
+  .about-content {
+    display: block;
+    color: var(--lavender);
+    padding-top: 30px;
+    background-color: var(--indigo);
+  }
+  #about-me2 {
+    border-bottom: 3px solid var(--hotpink);
+    border-right: none;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .bio2 {
+    flex: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .work-content {
+    display: block;
+    color: var(--lavender);
+    padding-top: 30px;
+    background-color: var(--indigo);
+    flex: 0 70%;
+  }
+  #work2 {
+    border-bottom: 3px solid var(--hotpink);
+    border-right: none;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .work2 {
+    flex: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+  }
+
+  .row3-projects {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .contact-content {
+    display: block;
+    color: var(--lavender);
+    padding-top: 10px;
+    background-color: var(--indigo);
+  }
+  #contact-me2 {
+    border-bottom: 3px solid var(--hotpink);
+    border-right: none;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .contact2 {
+    flex: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--lavender);
+    background-color: var(--indigo);
+  }
+  header h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 0 0 50px;
+    font-weight: bold;
+    font-size: 64px;
+    color: var(--lavender);
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    font-family: "Allison", cursive;
+  }
+  header nav {
+    margin: 20px 0 5px 51px;
+    flex-wrap: wrap;
+    padding-left: 29%;
+  }
+  header nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-family: "Allison", cursive;
+    font-size: 120px;
+  }
+
+  footer {
+    text-align: center;
+    width: 100%;
+  }
+
+  #hero {
+    width: 100%;
+  }
+  .headshot img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 10px 0px 10px 40px;
+    display: inline-block;
+    top: 50%;
+    left: 37%;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    right: 35%;
+  }
+  .about-content {
+    display: block;
+    color: var(--lavender);
+    padding-top: 30px;
+    background-color: var(--indigo);
+  }
+  #about-me2 {
+    border-bottom: 3px solid var(--hotpink);
+    border-right: none;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .bio2 {
+    flex: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .work-content {
+    display: block;
+    padding-top: 30px;
+    background-color: var(--indigo);
+  }
+  #work2 {
+    border-bottom: 3px solid var(--hotpink);
+    border-right: none;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .work2 {
+    flex: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+  }
+
+  .row3-projects {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .contact-content {
+    display: block;
+    color: var(--lavender);
+    padding-top: 10px;
+    background-color: var(--indigo);
+  }
+  #contact-me2 {
+    border-bottom: 3px solid var(--hotpink);
+    border-right: none;
+    text-align: center;
+  }
+  .contact2 {
+    flex: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    padding-bottom: 10px;
+    display: block;
+  }
+  .phone,
+  .email,
+  .github,
+  .linkedin {
+    text-decoration: none;
+    flex: 25%;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: block;
+  }
+}
+@media screen and (max-width: 575px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--lavender);
+    background-color: var(--indigo);
+  }
+  header h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 0 0 50px;
+    font-weight: bold;
+    font-size: 64px;
+    color: var(--lavender);
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    font-family: "Allison", cursive;
+  }
+  header nav {
+    margin: 20px 0 5px 51px;
+    flex-wrap: wrap;
+    padding-left: 29%;
+  }
+  header nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-family: "Allison", cursive;
+    font-size: 120px;
+  }
+
+  footer {
+    text-align: center;
+    width: 100%;
+  }
+
+  #hero {
+    width: 100%;
+  }
+  .headshot img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 10px 0px 10px 40px;
+    display: inline-block;
+    top: 50%;
+    left: 37%;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    right: 35%;
+  }
+  .about-content {
+    display: block;
+    color: var(--lavender);
+    padding-top: 30px;
+    background-color: var(--indigo);
+  }
+  #about-me2 {
+    border-bottom: 3px solid var(--hotpink);
+    border-right: none;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: larger;
+  }
+  .bio2 {
+    flex: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .work-content {
+    display: block;
+    padding-top: 30px;
+    background-color: var(--indigo);
+  }
+  #work2 {
+    border-bottom: 3px solid var(--hotpink);
+    border-right: none;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: larger;
+  }
+  .work2 {
+    flex: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+  }
+  .row2-projects {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .row3-projects {
+    display:block;
+    padding-bottom: 10px;
+  }
+  .contact-content {
+    display: block;
+    color: var(--lavender);
+    padding-top: 10px;
+    background-color: var(--indigo);
+  }
+  #contact-me2 {
+    border-bottom: 3px solid var(--hotpink);
+    border-right: none;
+    text-align: center;
+    font-size: larger;
+  }
+  .contact2 {
+    flex: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    padding-bottom: 10px;
+    display: block;
+  }
+  .phone,
+  .email,
+  .github,
+  .linkedin {
+    text-decoration: none;
+    flex: 25%;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: block;
+    font-size: larger;
+  }
 }
