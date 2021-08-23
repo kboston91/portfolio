@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  color: #bfa5c5;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #bfa5c5;
+  background-color: #170034;
+}
+
+header a {
+  text-decoration: none;
+  color: #bfa5c5;
+}
+header nav {
+  float: right;
+  margin: 20px 0 5px 0;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  margin: 0 10px;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #bfa5c5;
+  text-decoration: none;
+}
+
+header h1 a {
+  margin: 30px 25px 0 50px;
+  font-weight: bold;
+  font-size: 36px;
+  color: #bfa5c5;
+  text-decoration: none;
+  display: inline;
+}
+
+.hero {
+  height: 300px;
+  width: 100%;
+  margin: 0;
+}
+.hero-image {
+  margin: 0;
+  width: 100%;
+  background-image: url("../images/fakurian-design-u8Jn2rzYIps-unsplash.jpg");
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.headshot img {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 10px 0px 10px 40px;
+  display: inline-block;
+  top: 0;
+  left: 30px;
+}
+h3 {
+  float: right;
+  background-color: #c82792;
+  color: black;
+  height: 25%;
+  width: 20%;
+  text-align: center;
+  vertical-align: center;
+}
+.new-content {
+  display: flex;
+  color: #bfa5c5;
+  padding-top: 10px;
+  background-color: #170034;
+}
+#about-me2 {
+  flex: 20%;
+  border-right: 3px solid #c82792;
+  text-align: right;
+  padding-right: 2.5%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+#work2 {
+  flex: 20%;
+  border-right: 3px solid #c82792;
+  text-align: right;
+  padding-right: 2.5%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+#contact-me2 {
+  flex: 20%;
+  border-right: 3px solid #c82792;
+  text-align: right;
+  padding-right: 2.5%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.bio2 {
+  flex: 70%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.work2 {
+  flex: 70%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.contact2 {
+  flex: 70%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+}
+.phone, .email, .github, .linkedin {
+  text-decoration: none;
+  flex: 25%;
+}
+.main-project {
+  display: flex;
+  margin-bottom: 10px;
+}
+.row2-projects {
+  display: flex;
+  margin-bottom: 10px;
+}
+.row3-projects {
+  display: flex;
+  margin-bottom: 10px;
+}
+.project-1 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #c82792;
+}
+.project-2 img,
+.project-3 img,
+.project-4 img,
+.project-5 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #c82792;
+}
+.project-1 {
+  position: relative;
+  flex: 100%;
+}
+.project-3,
+.project-5 {
+  position: relative;
+  flex: 50%;
+}
+.project-2,
+.project-4 {
+  position: relative;
+  flex: 50%;
+  margin-right: 10px;
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  background-color: #c82792;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
