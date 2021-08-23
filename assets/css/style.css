@@ -1,9 +1,16 @@
 * {
   margin: 0;
-  color: #bfa5c5;
+  color: var(--lavender);
   padding: 0;
   box-sizing: border-box;
   font-family: 'Abel', sans-serif;
+}
+
+:root {
+  --hotpink: #c82792;
+  --indigo: #170034;
+  --lavender: #bfa5c5;
+  --purple: #491c60;
 }
 
 header {
@@ -12,23 +19,19 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  color: #bfa5c5;
-  background-color: #170034;
+  color: var(--lavender);
+  background-color: var(--indigo);
 }
 
 header a {
   text-decoration: none;
-  color: #bfa5c5;
+  color: var(--lavender);
 }
 header nav {
   float: right;
   margin: 20px 0 5px 0;
   flex-wrap: wrap;
   padding-right: 2.5%;
-}
-ul {
-  top:50%;
-  right: 50%;
 }
 header nav ul li {
   display: inline;
@@ -37,16 +40,22 @@ header nav ul li a {
   margin: 0 10px;
   font-weight: lighter;
   font-size: 20px;
-  color: #bfa5c5;
+  color: var(--lavender);
   text-decoration: none;
-  
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header nav ul li a:hover {
+  background: var(--hotpink);
+  color: black;
+  text-shadow: none;
+  padding: 5px;
 }
 
 /* header h1 a {
   margin: 30px 25px 0 50px;
   font-weight: bold;
   font-size: 36px;
-  color: #bfa5c5;
+  color: var(--lavender);
   text-decoration: none;
   display: inline;
   font-family: 'Allison', cursive;
@@ -55,14 +64,16 @@ h1 {
   margin: 0 0 0 50px;
   font-weight: bold;
   font-size: 64px;
-  color: #bfa5c5;
+  color: var(--lavender);
   text-decoration: none;
   display: inline;
   font-family: 'Allison', cursive;
 }
 
 h2 {
-  
+  font-weight: bold;
+  font-family: 'Allison', cursive;
+  font-size: 30px;
 }
 
 .hero {
@@ -92,44 +103,28 @@ h2 {
 .hero-text{
   text-align: center;
   position: absolute;
-  top: 75%;
+  top: 70%;
   right: 0;
   padding-right: 2.5%;
 }
 h3 {
   float: right;
-  background-color: #c82792;
+  background-color: var(--hotpink);
   color: black;
   text-align: center;
   padding: 8px;
   font-family: 'Allison', cursive;
-  font-size: 30px;
+  font-size: 32px;
 }
-.new-content {
+.about-content {
   display: flex;
-  color: #bfa5c5;
+  color: var(--lavender);
   padding-top: 10px;
-  background-color: #170034;
+  background-color: var(--indigo);
 }
 #about-me2 {
   flex: 20%;
-  border-right: 3px solid #c82792;
-  text-align: right;
-  padding-right: 2.5%;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-#work2 {
-  flex: 20%;
-  border-right: 3px solid #c82792;
-  text-align: right;
-  padding-right: 2.5%;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-#contact-me2 {
-  flex: 20%;
-  border-right: 3px solid #c82792;
+  border-right: 3px solid var(--hotpink);
   text-align: right;
   padding-right: 2.5%;
   margin-bottom: 10px;
@@ -142,9 +137,103 @@ h3 {
   margin-bottom: 10px;
   margin-top: 20px;
 }
+.work-content {
+  display: flex;
+  color: var(--lavender);
+  padding-top: 10px;
+  background-color: var(--indigo);
+}
+#work2 {
+  flex: 20%;
+  border-right: 3px solid var(--hotpink);
+  text-align: right;
+  padding-right: 2.5%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 .work2 {
   flex: 70%;
   padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.main-project {
+  display: flex;
+  margin-bottom: 10px;
+}
+.row2-projects {
+  display: flex;
+  margin-bottom: 10px;
+}
+.row3-projects {
+  display: flex;
+  margin-bottom: 10px;
+}
+.project-1 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid var(--hotpink);
+  opacity: .5;
+}
+.project-2 img,
+.project-3 img,
+.project-4 img,
+.project-5 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid var(--hotpink);
+  opacity: .5;
+}
+.project-1 {
+  position: relative;
+  flex: 100%;
+}
+.project-3,
+.project-5 {
+  position: relative;
+  flex: 50%;
+}
+.project-2,
+.project-4 {
+  position: relative;
+  flex: 50%;
+  margin-right: 10px;
+}
+.project-1 img:hover,
+.project-2 img:hover,
+.project-3 img:hover,
+.project-4 img:hover,
+.project-5 img:hover {
+ opacity: 1;
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  background-color: var(--hotpink);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-content {
+  display: flex;
+  color: var(--lavender);
+  padding-top: 10px;
+  background-color: var(--indigo);
+}
+#contact-me2 {
+  flex: 20%;
+  border-right: 3px solid var(--hotpink);
+  text-align: right;
   padding-right: 2.5%;
   margin-bottom: 10px;
   margin-top: 20px;
@@ -164,64 +253,10 @@ h3 {
 .phone, .email, .github, .linkedin {
   text-decoration: none;
   flex: 25%;
-  border-bottom: 3px solid #c82792;
+  border-bottom: 3px solid var(--hotpink);
   margin-right: 20px;
   margin-left: 20px;
 }
-.main-project {
-  display: flex;
-  margin-bottom: 10px;
-}
-.row2-projects {
-  display: flex;
-  margin-bottom: 10px;
-}
-.row3-projects {
-  display: flex;
-  margin-bottom: 10px;
-}
-.project-1 img {
-  height: 100%;
-  width: 100%;
-  border: 3px solid #c82792;
-}
-.project-2 img,
-.project-3 img,
-.project-4 img,
-.project-5 img {
-  height: 100%;
-  width: 100%;
-  border: 3px solid #c82792;
-}
-.project-1 {
-  position: relative;
-  flex: 100%;
-}
-.project-3,
-.project-5 {
-  position: relative;
-  flex: 50%;
-}
-.project-2,
-.project-4 {
-  position: relative;
-  flex: 50%;
-  margin-right: 10px;
-}
-.text-block {
-  position: absolute;
-  bottom: 20px;
-  left: 0px;
-  background-color: #c82792;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-}
-.footer {
-  width: 100%;
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.phone:hover, .email:hover, .github:hover, .linkedin:hover {
+  border-bottom: 3px solid var(--lavender);
 }
